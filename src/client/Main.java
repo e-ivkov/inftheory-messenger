@@ -107,6 +107,8 @@ public class Main extends Application {
                     return repetitionCompresser.decompress(compressed);
                 case Huffman:
                     return Huffman.decompress(compressed);
+                case LZ78:
+                    return LZ78.decompress(compressed);
             }
         } catch (Exception e){
             e.printStackTrace();

@@ -7,7 +7,7 @@ package client;
  * @since 14.11.2017
  */
 public enum Compression {
-    ShannonFano, Repetition, Huffman;
+    Repetition, ShannonFano, Huffman, LZ78;
 
     public static byte getByteValue(Compression e){
         for (int i = 0; i < values().length; i++) {

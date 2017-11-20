@@ -142,6 +142,8 @@ public class Controller {
                     return ShannonFano.compress(Files.readAllBytes(file.toPath()));
                 case Huffman:
                     return Huffman.compress(Files.readAllBytes(file.toPath()));
+                case LZ78:
+                    return LZ78.compress(Files.readAllBytes(file.toPath()));
             }
         } catch (Exception e) {
             println("Compression exception");
